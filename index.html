@@ -11,15 +11,18 @@
 	<form id="form">
 		
 			<p>Name:</p>
-            <input type="text" name="name" id="form_name">
+			<input type="text" name="name" id="form_name">
+			<span style="color:red" id="form_name_span"></span>
             <br>
 		    <p>Title:</p>
 			<input type="text" name="title" id="form_title">
+			<span style="color:red" id="form_title_span"></span>
             <br>
 		    <p>Extension:</p>
 			<input type="number" name="extension" id="form_extension">
+			<span style="color:red" id="form_extension_span"></span>
             <br>
-		    <button id="submit" type="button" class="add_employee">Add</button>
+		    <button id="submit_btn" type="button" class="add_employee">Add</button>
 	</form>
     <p>
         <strong>Showing <span id="count_of_emp"></span> employees</strong>
