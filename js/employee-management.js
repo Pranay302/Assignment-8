@@ -26,8 +26,8 @@ function load_employee_list() {
 	var html_code = ""
 	for (var i = 0; i < employee_list.length; i++) {
 		var employee = employee_list[i];
-		html_code += '<tr><td>' + employee[0] + '</td><td>' + employee[1] + '</td><td>' + employee[2] + 
-		'</td><td><button onclick="delete_emp(' + i + ')">Delete</button></td></tr>';
+		html_code += '<tr><td>'+employee[0]+'</td><td>'+employee[1]+'</td><td>'+employee[2]+ 
+		'</td><td><button onclick="delete_emp('+i+')">Delete</button></td></tr>';
 	}
 	document.querySelector("tbody").innerHTML = html_code;
 	document.getElementById("count_of_emp").innerHTML = employee_list.length;
